@@ -36,7 +36,7 @@ async def main_rencprx():
                         aaa = yyy_rencprx.message_id
                         await asyncio.sleep(10)
                         zzz_rencprx = await app.get_history(bot, limit = 1)
-                        for ccc in zzz_xsvshacker:
+                        for ccc in zzz_rencprx:
                             bbb = ccc.message_id
                         if aaa == bbb:
                             xxx_rencprx += f"\n\n🤖 **BOT**: @{bot}\n🔴 **STATUS**: down ❌"
@@ -54,7 +54,7 @@ async def main_rencprx():
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
                 xxx_rencprx += f"\n\n✔️ Last checked on: {last_update} ({TIME_ZONE})\n\n<i>♻️ Updates every 45min - Powered by Powerful Bot Status</i>"
-                await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_xsvshacker)
+                await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_rencprx)
                 print(f"Last checked on: {last_update}")                
                 await asyncio.sleep(2700)
                         
